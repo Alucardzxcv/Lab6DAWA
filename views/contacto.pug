@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Contactame
+    link(rel='stylesheet', href='./css/contacto.css')
+  body
+    .container
+      h1 Contactame
+      form(action='/enviar-mensaje', method='POST')
+        label(for='nombre') Nombre:
+        input(type='text', name='nombre', required)
+        label(for='email') Correo electrónico:
+        input(type='email', name='email', required)
+        label(for='mensaje') Mensaje:
+        textarea(name='mensaje', required)
+        button(type='submit') Enviar mensaje
+    .buttons
+     form(action="/", method="post")
+      button(type='submit') Volver al inicio
+     form(action="/habilidades", method="post") 
+      button(type='submit') Ver habilidades

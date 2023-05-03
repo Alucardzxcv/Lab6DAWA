@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Mi página
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css")
+  body
+    h1 Habilidades
+    p Estas son las habilidades que formé con mi experiencia
+
+    .container
+      each val, index in [1, 2]
+        .row.mb-3
+          .col-md-6
+            img(src=`/images/habilidad-${index * 2 - 1}.jpg`, alt=`Habilidad ${index * 2 - 1}`, class="img-fluid rounded")
+            
+          .col-md-6
+            img(src=`/images/habilidad-${index * 2}.jpg`, alt=`Habilidad ${index * 2}`, class="img-fluid rounded")
+          
+    
+      form(action="/", method="post")
+       button(type='submit') Volver al inicio
+      form(action="/contacto", method="post") 
+       button(type='submit') Contactanos 
+

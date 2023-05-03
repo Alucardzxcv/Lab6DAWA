@@ -1,0 +1,18 @@
+.container {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .container p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  

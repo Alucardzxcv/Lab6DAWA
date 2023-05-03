@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Mi página
+    link(rel="stylesheet", href="/css/styles.css")
+    link(rel="stylesheet", type="text/css", href="/css/buttons.css")
+
+  body
+    .presentacion
+      h1.inicio
+        | ¡Bienvenidos a mi página!
+      p
+        | Me presento
+      img(src="./images/yo.jpg", alt="mi cara")
+    .container
+      .contenido
+        p
+         | Mi nombre es Carrillo Varas Kevin Sebastian y soy un estudiante de C24B de la carrera de Diseño y desarrollo de software , actualmente estoy cursando el 5to ciclo, mis pasatiempos son tocar guitarra y hacer deporte 
+    .container#buttonc
+      form(action="/habilidades", method="post")
+        button(type="submit") Habilidades 
+      form(action="/contacto", method="post")
+        button(type="submit") Contacto  
